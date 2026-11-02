@@ -1,0 +1,12 @@
+service.yml
+apiVersion: v1
+kind: Service
+metadata: 
+  name: mys
+spec:
+  type: LoadBalancer
+  selector:
+    app: swiggy
+  ports: 
+    - port: 80
+      targetPort: 80
